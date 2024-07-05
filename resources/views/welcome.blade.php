@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('page-title')
+    Home
+@endsection
+
 @section('main')
-    Contenuto home
+    <ul>
+        @foreach ($products as $product)
+            @include('shared.product')
+        @endforeach
+    </ul>
 @endsection

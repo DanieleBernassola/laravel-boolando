@@ -1,0 +1,1 @@
+<li>{{ $product['brand'] }}</li>

@@ -1,1 +1,128 @@
 @import "~bootstrap/scss/bootstrap";
+
+// $bg-header: #ff6900;
+// $bg-footer: #1a1a1a;
+// $bg-discount: red;
+// $bg-eco: green;
+
+header {
+    background-color: #ff6900;
+    padding: 16px 0;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 16px 0;
+}
+/* INIZIO CLASSI SU IMMAGINE*/
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    position: relative;
+
+    &:hover .main-image {
+        display: none;
+    }
+
+    &:hover .hover-image {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.hover-image {
+    display: none;
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    font-size: 30px;
+    padding: 10px 15px;
+    &:hover {
+        color: red;
+    }
+}
+
+.label {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+}
+
+.discount-label {
+    background-color: red;
+    padding: 5px;
+    left: 0;
+}
+
+.eco-label {
+    background-color: green;
+    padding: 5px;
+}
+/* FINE CLASSI SU IMMAGINE */
+/* INIZIO CLASSI FUORI IMMAGINI */
+.brand {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.prod-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.new-price {
+    display: inline-block;
+    color: red;
+    font-weight: bold;
+}
+
+.old-price {
+    display: inline-block;
+    text-decoration: line-through;
+}
+/* FINE CLASSI FUORI IMMAGINI */
+/* INIZIO CLASSI SUPERBONUS */
+li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+i {
+    margin: 0 5px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.company {
+    font-size: 14px;
+}
+
+.footer-info {
+    p {
+        font-size: 10px;
+        display: inline-block;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+}
+
+.footer-icons {
+    margin-top: 5px;
+}
+/* FINE CLASSI SUPERBONUS */
