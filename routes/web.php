@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    // ARRAY PRESENTE NEL FILE PRODUCTS.PHP IN CONFIG
+    // CREATO DATA PER PASSARE IN RETURN $DATA
+    $data = [
+        'products' => config('products')
+    ];
+
+    return view('welcome', $data);
 })->name('home');
