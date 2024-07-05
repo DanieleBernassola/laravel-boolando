@@ -5,9 +5,7 @@
 @endsection
 
 @section('main')
-    <ul>
-        @foreach ($products as $product)
-            @include('shared.product')
-        @endforeach
-    </ul>
+    @foreach ($products as $product)
+        @include('shared.product')
+    @endforeach
 @endsection

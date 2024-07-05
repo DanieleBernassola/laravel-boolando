@@ -1,5 +1,7 @@
 <main>
     <div class="container">
-        @yield('main')
+        <div class="row">
+            @yield('main')
+        </div>
     </div>
 </main>
